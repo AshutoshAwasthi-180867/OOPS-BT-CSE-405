@@ -4,14 +4,30 @@ omittted, the number will be squared. Write a main() function that gets values f
 
 #include<iostream>
 using namespace std;
-int power(double n,int p=2)
+double power(double n,int p=2)
 {
-    double res=1;
-    for(int i=0;i<p;i++)
+    double res=1.0;
+    int i;
+    if(p==0)
+    {
+        return 1;
+    } 
+
+    
+    if(p<0)
+    {
+        p=p*-1;
+        n=1/n;
+    }
+    
+    for(i=0;i<p;i++)
         res=res*n;
     return res;
+        
+    
+    
 }
-int print(int res)
+int print(double res)
 {
     cout<<"result is "<<res<<endl;
     return 0;
