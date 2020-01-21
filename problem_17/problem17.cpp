@@ -19,6 +19,7 @@ class binary
 
 void binary :: display(void)
 {
+    cout<<"result"<<endl;
     cout<<x<<endl;;
     cout<<y<<endl;
 }
