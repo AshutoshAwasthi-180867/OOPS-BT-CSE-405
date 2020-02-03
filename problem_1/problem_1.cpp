@@ -1,3 +1,4 @@
+/*  program to read a matrix of size m*n from user and display same using display function         */
 #include<iostream>
 #include<cstdlib>
 using namespace std;
